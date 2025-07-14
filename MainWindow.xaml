@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfAppASMT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppASMT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Border Padding="10">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    
+                    
+                </Grid.ColumnDefinitions>
+                <Button 
+                    x:Name="btMachine"
+                    Click="btMachine_Click"
+                    Margin="0 10 10 0"
+                    Grid.Column="0"
+                    Content="Machine"
+                    Height="100"
+                    Width="150"
+                    FontSize="32"
+                    />
+                <Button
+                    x:Name="btSpare"
+                    Click="btSpare_Click"
+                    Margin="0 10 10 0"
+                    Content="Spare"
+                    Grid.Column="1"
+                    Height="100"
+                    Width="150"
+                    FontSize="32"
+                    />
+                <Button
+                    x:Name="btDowntime"
+                    Click="btDowntime_Click"
+                    Margin="0 10 10 0"
+                    Content="Downtime"
+                    Grid.Column="2"
+                    Height="100"
+                    Width="150"
+                    FontSize="32"
+                    />
+            </Grid>
+        </StackPanel>
+
+    </Border>
+</Window>
